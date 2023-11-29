@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饌茶 Enjoy Tea｜聯絡我們</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="GotoPurchase.html">前往購買</a></li>
+                    <li><a href="teaflavor.html">茶葉風味</a></li>
+                    <li><a href="News.html">最新消息</a></li>
+                    <li><a href="About.html">關於我們</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                    <li><a href="Login.html">會員登入</a></li>
+                </ul>
+            </nav>
+            <div class="right_side">
+                <div class="right_btn search_bar">
+                    <a href="javascript:void(0);"><i class="bi bi-search"></i></a>
+                </div>
+                <div class="right_btn cart_bar">
+                    <a href="javascript:void(0);"><i class="bi bi-cart3"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner_area contact">
+            <!-- <img src="img/banner.png" alt=""> -->
+        </section>
+        <div class="breadcrumbList">
+            <div class="container">
+              <ul class="breadcrumb">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+              </ul>
+            </div>
+        </div>
+        
+        <section class="contact_area"> 
+            <form action="">
+                <div class="contact_item">
+                    <input type="text" placeholder="姓名">
+                    <input type="text" placeholder="聯絡電話">
+                    <input type="text" placeholder="電子信箱">
+                    <select name="" id="">
+                        <option value="">請選擇問題類型</option>
+                        <option value="">加盟諮詢</option>
+                        <option value="">售後建議回饋</option>
+                    </select>
+                    <textarea placeholder="留言" name="" id="" cols="30" rows="10"></textarea>
+                    <div class="btn_viewmore">
+                        <a href="#" class="viewmore-link">確認送出</a>
+                    </div>
+                   
+                </div>
+            </form> 
+            <hr>
+        </section>
+    <footer> 
+        <div class="container">
+            <div class="footerLogo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="footercup">
+                <img src="img/Group 109.png" alt="">
+            </div>
+                <div class="footer_map">
+            <div class="description">
+
+                    <h3>關於我們</h3>
+                
+                <p><a href="">品牌故事</a></p>
+                <p><a href="">門市據點</a></p>
+            </div>
+            <div class="description">
+
+                    <h3>深入瞭解</h3>
+                
+                <p><a href="Product-Info.html">產品介紹</a></p>
+                <p><a href="teaflavor.html">茶葉風味</a></p>
+                <p><a href="GotoPurchase.html">如何購買</a></p>
+            </div>
+            <div class="description">
+
+                    <h3>客戶服務</h3>
+                
+                <p><a href="contact.html">聯絡我們</a></p>
+                <p><a href="">使用者條款</a></p>
+                <p><a href="">隱私權政策</a></p>
+            </div>
+            <div class="description">
+
+                    <h3>聯絡我們</h3>
+
+                <p>zhwahnchah01@gmail.com</p>
+                <p>320桃園市中壢區復興路46號9樓</p>
+                <p>+886 -1-1234 5678</p>
+                <p>週一至週五 9:00~16:00</p>
+            </div>
+                </div>
+        </div>
+        
+             
+       
+         <div class="copyright">Copyright ZHWAHW CHAH  © 2023</div>
+         
+    </footer>
+
+    <script>
+        $(window).scroll(function(){
+            var st = $(window).scrollTop()
+            if(st >= '100'){
+                $('header').addClass('act')
+            }else{
+                $('header').removeClass('act')
+            }
+        })
+    </script>
+    <button id="topBtn" title="TOP">TOP</button>
+    <script src="script.js"></script>
+</body>
+</html>

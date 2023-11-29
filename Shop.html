@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>饌茶 Enjoy Tea｜購物車</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page.css">
+    <script
+        src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous">
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="img/logo.png" alt=""></a>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="GotoPurchase.html">前往購買</a></li>
+                    <li><a href="teaflavor.html">茶葉風味</a></li>
+                    <li><a href="News.html">最新消息</a></li>
+                    <li><a href="About.html">關於我們</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                    <li><a href="Login.html">會員登入</a></li>
+                </ul>
+            </nav>
+            <div class="right_side">
+                <div class="right_btn search_bar">
+                    <a href="javascript:void(0);"><i class="bi bi-search"></i></a>
+                </div>
+                <div class="right_btn cart_bar">
+                    <a href="javascript:void(0);"><i class="bi bi-cart3"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="banner_area Shopping-Cart">
+            <!-- <img src="img/banner.png" alt=""> -->
+        </section>
+        <div class="breadcrumbList">
+            <div class="container">
+              <ul class="breadcrumb">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="Shop.html">購物車</a></li>
+              </ul>
+            </div>
+        </div>
+        
+        <section class="Shop-Cart"> 
+            <div class="checkout-nav">
+                <div class="step-active">
+                  <span class="badge"><span class="text">1</span></span>
+                </div>
+                <div class="step">
+                  <span class="badge"><span class="text">2</span></span>  
+                </div>
+                <div class="step">
+                  <span class="badge"><span class="text">3</span></span>  
+                </div>
+              </div>
+              <div class="Shop-Cart-text">
+                <p>商品資料</p>
+                <p>優惠</p>
+                <p>單件價格</p>
+                <p>數量</p>
+              </div>
+              <div class="Product-Information">
+                <div class="Product">
+                    <div class="Product-img"><img src="img/Group 334.png" alt=""></div>
+                    <p>四季春200g經典鐵罐</p>
+                </div>
+                <div class="Discount">
+                    <p>-</p>
+                </div>
+                <div class="Price">
+                    <p>NT$100</p>
+                </div>
+                <div class="quantity-selector">
+                    <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                    <input type="number" class="quantity-input" id="quantity" value="1" min="1">
+                    <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+                    </div>
+                    <div class="Total">
+                <p>NT$100</p>
+                </div>
+              </div>
+              <div class="Discount-text">
+                <p>尚有其它優惠可使用 : </p>
+              </div>
+              <div class="Discount-Block">
+                <div class="Discount-txt">
+                    
+                    <p><span>滿額免運</span>消費滿600元｜超商取貨免運（寄送地區：台灣） 再買 NT$500 即享有免運</p> 
+                    
+                    <p><span>購物金回饋</span>再滿 NT$100 即得100元購物金</p>
+                </div>
+                <div class="store-btn">
+                    <a class="btn1" href="#">繼續購物</a>
+                    <a class="btn2" href="#">></a>
+                </div>
+              </div>
+        </section>
+
+        <section class="Add-on-Items">
+            <div class="add-text">
+                <p>讓您的品茶體驗更加美好</p>
+              </div>
+            <div class="ProductDetails">
+                <div class="card">
+                    <img src="img/Teabag.png" alt="">
+                    <div class="card_txt">
+                        <div class="productname">NT 170 四季春｜隨行包袋茶10入</div>
+                    </div>
+                    <div class="add-btn">
+                        <a href="">加購</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Teabag.png" alt="">
+                    <div class="card_txt">
+                        <div class="productname">NT 150 白毫烏龍｜隨行包袋茶10入</div>
+                    </div>
+                    <div class="add-btn">
+                        <a href="">加購</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Teabag.png" alt="">
+                    <div class="card_txt">
+                        <div class="productname">NT 150 鐵觀音｜隨行包袋茶10入</div>
+                    </div>
+                    <div class="add-btn">
+                        <a href="">加購</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Step2">
+            
+            <form action="">
+                <h3 class="step2-title">選擇付款及送貨方式</h3>
+                <div class="step2-item">
+                    <select name="" id="">
+                        <option value="">選擇送貨地點</option>
+                        <option value="">台灣</option>
+                        <option value="">中國</option>
+                        <option value="">美國</option>
+                        <option value="">日本</option>
+                    </select>
+
+                    <select name="" id="">
+                        <option value="">選擇送貨方式</option>
+                        <option value="">7-11取貨不付款(取貨請備證件)</option>
+                        <option value="">全家取貨不付款(取貨請備證件)</option>
+                        <option value="">黑貓-常溫</option>
+                    </select>
+
+                    <div class="step2-txt">
+                        <p>使用超商取貨收件人欄位務必留下證件上的『真實姓名』，取貨時需出示與貨品上取件者姓名相符且有照片之身分證明文件正本方可領取商品。為確保雙方權益，若取件者無法出示身分證件，超商門市將無法提供取件服務。＊如未正確輸入真實姓名，以致無法正常取貨，則該商品將待7天後退回，必須重新支付配送費用（65元）才可進行配送。</p>
+                    </div>
+
+                    <select name="" id="">
+                        <option value="">選擇付款方式</option>
+                        <option value="">信用卡（VISA / Master / JCB）</option>
+                        <option value="">銀行轉帳 / ATM匯款</option>
+                    </select>
+
+                    <div class="step2-txt-2">
+                        <p>結帳前請務必確認信用卡3D認證付款完成，以免影響結帳過程中發生系統錯誤。<br>
+                           請填寫正確收件地址及收件人、連絡電話<br>
+                           上述資料未填寫完整，導致物品出貨後未能正確送達，我方不提供任何責任賠償</p>
+                        <span>退換貨原則：訂單成立後、未出貨前，本公司於合理範圍內接受取消訂單<br>
+                            購賣之商品為食品類商品，請勿拆開包裝，一經拆封讓包裝內食品接觸空氣，則拒絕進行退換貨<br>
+                            若要辦理退換貨，請務必貨到 7 天內聯絡客服人員，並提供購買單號辦理退貨事宜（退回商品必須是全新狀態且保持完整包裝）<br>
+                            海外運送（非台灣地區之配送）除商品本身有瑕疵外，海外購物恕不受理退換貨服務，下單前請確認品項，如有商品瑕疵問題請您使用聯繫我們告知，我們將協助您處理後續貨品事宜</span>    
+                    </div>
+                </div>
+            </form>
+            <div class="Checkout">
+                <div class="Check"><p>確認訂單</p></div>
+                <div class="check-amount">小計: <p>NT$100</p> </div>
+                <span>折抵購物金 : </span>
+                <div class="Shipping-Fee">運費: <p>NT$65</p> </div>
+                <span>使用優惠代碼</span>
+                <div class="check-total">合計:</div>
+                <div class="btn_viewmore">
+                    <a href="#" class="viewmore-link">前往結帳</a>
+                </div>
+            </div> 
+        </section>
+
+    <footer> 
+        <div class="container">
+            <div class="footerLogo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="footercup">
+                <img src="img/Group 109.png" alt="">
+            </div>
+                <div class="footer_map">
+            <div class="description">
+
+                    <h3>關於我們</h3>
+                
+                <p><a href="About.html">品牌故事</a></p>
+                <p><a href="">門市據點</a></p>
+            </div>
+            <div class="description">
+
+                    <h3>深入瞭解</h3>
+                
+                <p><a href="Product-Info.html">產品介紹</a></p>
+                <p><a href="teaflavor.html">茶葉風味</a></p>
+                <p><a href="GotoPurchase.html">如何購買</a></p>
+            </div>
+            <div class="description">
+
+                    <h3>客戶服務</h3>
+                
+                <p><a href="contact.html">聯絡我們</a></p>
+                <p><a href="">使用者條款</a></p>
+                <p><a href="">隱私權政策</a></p>
+            </div>
+            <div class="description">
+
+                    <h3>聯絡我們</h3>
+
+                <p>zhwahnchah01@gmail.com</p>
+                <p>320桃園市中壢區復興路46號9樓</p>
+                <p>+886 -1-1234 5678</p>
+                <p>週一至週五 9:00~16:00</p>
+            </div>
+                </div>
+        </div>
+        
+             
+       
+         <div class="copyright">Copyright ZHWAHW CHAH  © 2023</div>
+         
+    </footer>
+
+    <script>
+        $(window).scroll(function(){
+            var st = $(window).scrollTop()
+            if(st >= '100'){
+                $('header').addClass('act')
+            }else{
+                $('header').removeClass('act')
+            }
+        })
+    </script>
+    <script>
+        function increaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+      
+        function decreaseQuantity() {
+          var quantityInput = document.getElementById('quantity');
+          var currentValue = parseInt(quantityInput.value);
+          
+          if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+          }
+        }
+      </script>
+      
+    <button id="topBtn" title="TOP">TOP</button>
+    <script src="script.js"></script>
+</body>
+</html>
