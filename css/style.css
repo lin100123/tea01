@@ -440,7 +440,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
-  background: linear-gradient(rgba(255, 255, 255, 0.7529411765), rgba(255, 255, 255, 0.7960784314)), url(/img/011.jpg) no-repeat;
+  background: linear-gradient(rgba(255, 255, 255, 0.7529411765), rgba(255, 255, 255, 0.7960784314)), url(../img/011.jpg) no-repeat;
   background-size: cover;
   width: 100%;
   color: #333;
