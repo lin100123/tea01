@@ -267,6 +267,7 @@
 .source .source-title {
   font-size: 32px;
   background-color: #759139;
+  border-radius: 0 60px 0 60px;
   text-align: center;
   color: #fff;
   font-family: "Noto Serif TC", serif;
@@ -275,6 +276,7 @@
   width: 1100px;
   padding-right: 70px;
   font-size: 24px;
+  line-height: 70px;
 }
 .source h2 {
   padding: 10px 0;
@@ -328,6 +330,11 @@
 }
 .related .card .tea-btn {
   margin: 30px 10px;
+  display: flex;
+  justify-content: center;
+}
+.related .card .tea-btn .Shop {
+  background-color: #3D8B58;
 }
 .related .card .img {
   width: 100%;
@@ -346,6 +353,7 @@
 }
 .related .card .card_txt .related-name span {
   font-size: 32px;
+  margin: 0 1 0px;
 }
 
 .contact_item {
@@ -487,7 +495,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  width: 1600px;
+  width: 1550px;
   justify-content: end;
 }
 .flavor-freshing .flavor-card2 .flavor-img {
@@ -569,7 +577,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  width: 1600px;
+  width: 1550px;
   justify-content: end;
   margin: 100px 0;
 }
@@ -653,7 +661,7 @@
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  width: 1600px;
+  width: 1550px;
   justify-content: end;
   margin: 100px 0;
 }
@@ -752,6 +760,16 @@ hr {
   padding-bottom: -700px;
   font-size: 24px;
 }
+.About .about-text::before {
+  display: inline-block;
+  width: 500px;
+  height: 500px;
+  background: url(../img/page-5-01.png) no-repeat;
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -930px;
+}
 .About .about-text .store-btn {
   text-align: end;
   margin: 50px -10px;
@@ -772,16 +790,8 @@ hr {
   display: inline-block;
   text-align: justify;
   position: relative;
-}
-.About .about-text p::before {
-  display: inline-block;
-  width: 500px;
-  height: 500px;
-  background: url(../img/page-5-01.png) no-repeat;
-  content: "";
-  position: absolute;
-  right: -200px;
-  bottom: -560px;
+  max-width: 700px;
+  margin-top: 50px;
 }
 
 hr {
@@ -986,6 +996,10 @@ hr {
   width: 200px;
   background-color: #000000;
   transform: translate(80%, 50%);
+}
+.Shop-Cart .step-txt {
+  display: flex;
+  margin-bottom: 100px;
 }
 .Shop-Cart .Shop-Cart-text {
   display: flex;
