@@ -413,6 +413,45 @@ $roastedcolor : #846060;
 //contact--end
 
 //teaflavor--start
+.bookmark{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 500px;
+  z-index: 999;
+  .freshing-mark,.fruit-mark,.roasted-mark{
+    border-radius: 0 80px 80px 0;
+    width: 200px;
+    height: 61px;
+    li{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        font-size: 24px;
+        a{
+          color: #000;
+          text-decoration: none;
+          &:hover{
+            color: #fff;
+          }
+        }
+    
+    }
+  }
+  
+  .freshing-mark{
+    margin-left: -15px;
+    background-color: $secondarycolor3;
+  }
+  .fruit-mark{
+    margin-left: -35px;
+    background-color: $floralcolor;
+  }
+  .roasted-mark{
+    margin-left: -35px;
+    background-color: $roastedcolor;
+  }
+}
 .flavor-freshing{
   margin: 100px 0 350px ;
   position: relative;
