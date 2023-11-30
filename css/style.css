@@ -17,8 +17,8 @@ img {
   display: inline-block;
   background-color: #355b30;
   color: #fff;
-  padding: 10px 70px;
-  font-size: 32px;
+  padding: 5px 30px;
+  font-size: 24px;
   text-decoration: none;
   border-radius: 80px 80px;
 }
@@ -255,7 +255,7 @@ header.act .header .right_side .right_btn:first-child {
 }
 .blockbody .activity .activity_text .btn_viewmore {
   margin-top: 40px;
-  text-align: center;
+  text-align: start;
 }
 .blockbody .quality {
   display: flex;
@@ -377,8 +377,8 @@ header.act .header .right_side .right_btn:first-child {
   text-align: justify;
 }
 .blockbody .promotion .btn_viewmore {
-  text-align: center;
-  margin: 100px;
+  text-align: start;
+  margin: 70px 0;
 }
 .blockbody .gift-box {
   text-align: center;

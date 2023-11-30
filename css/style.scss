@@ -21,10 +21,9 @@ img{
         display: inline-block;
         background-color: $maincolor;
         color: #fff;
-        padding: 10px 70px;
-        font-size: 32px;
+        padding: 5px 30px;
+        font-size: 24px;
         text-decoration: none;
-        
         border-radius: 80px 80px;
     }
 }
@@ -271,6 +270,7 @@ header {
 
         img {
             margin: 10px;
+           
         }
     }
 
@@ -308,7 +308,7 @@ header {
 
             .btn_viewmore {
                 margin-top: 40px;
-                text-align: center;
+                text-align: start;
             }
         }
 
@@ -452,8 +452,8 @@ header {
         }
 
         .btn_viewmore {
-            text-align: center;
-            margin: 100px;
+            text-align: start;
+            margin: 70px 0;
         }
     }
 
