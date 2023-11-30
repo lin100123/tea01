@@ -119,6 +119,9 @@ header .header nav ul li a {
   text-decoration: none;
   font-size: 18px;
 }
+header .header nav ul li a:hover {
+  color: #fa0;
+}
 header .header nav ul li:nth-child(3) {
   margin-right: 200px;
 }
@@ -152,6 +155,9 @@ header.act .header .logo img {
 }
 header.act .header nav ul li a {
   color: #000;
+}
+header.act .header nav ul li a:hover {
+  color: #759139;
 }
 header.act .header .right_side .right_btn a {
   color: #000;
