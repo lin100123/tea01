@@ -132,6 +132,9 @@ header {
                         color: #fff;
                         text-decoration: none;
                         font-size: 18px;
+                        &:hover{
+                            color: #fa0;
+                        }
                     }
 
                     &:nth-child(3) {
@@ -182,6 +185,9 @@ header {
                     li {
                         a {
                             color: #000;
+                            &:hover{
+                                color: $secondarycolor;
+                            }
                         }
                     }
                 }
