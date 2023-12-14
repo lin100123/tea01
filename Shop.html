@@ -204,66 +204,60 @@
             </div> 
         </section>
 
-    <footer> 
-        <div class="container">
-            <div class="footerLogo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="footercup">
-                <img src="img/Group 109.png" alt="">
-            </div>
-                <div class="footer_map">
-            <div class="description">
-
-                    <h3>關於我們</h3>
-                
-                <p><a href="About.html">品牌故事</a></p>
-                <p><a href="">門市據點</a></p>
-            </div>
-            <div class="description">
-
-                    <h3>深入瞭解</h3>
-                
-                <p><a href="Product-Info.html">產品介紹</a></p>
-                <p><a href="teaflavor.html">茶葉風味</a></p>
-                <p><a href="GotoPurchase.html">如何購買</a></p>
-            </div>
-            <div class="description">
-
-                    <h3>客戶服務</h3>
-                
-                <p><a href="contact.html">聯絡我們</a></p>
-                <p><a href="">使用者條款</a></p>
-                <p><a href="">隱私權政策</a></p>
-            </div>
-            <div class="description">
-
-                    <h3>聯絡我們</h3>
-
-                <p>zhwahnchah01@gmail.com</p>
-                <p>320桃園市中壢區復興路46號9樓</p>
-                <p>+886 -1-1234 5678</p>
-                <p>週一至週五 9:00~16:00</p>
-            </div>
+        <footer>
+            <div class="container">
+                <div class="footerLogo">
+                    <img src="img/logo.png" alt="">
                 </div>
-        </div>
-        
-             
-       
-         <div class="copyright">Copyright ZHWAHW CHAH  © 2023</div>
-         
-    </footer>
+                <div class="footercup">
+                    <img src="img/Group 109.png" alt="">
+                </div>
+                <ul class="footer_map">
+                    <li class="description">
+                        <h3>關於我們</h3>
+                        <p><a href="About.html">品牌故事</a></p>
+                        <p><a href="#">門市據點</a></p>
+                    </li>
+                    <li class="description">
+                        <h3>深入瞭解</h3>
+                        <p><a href="Product-Info.html">茶葉資訊</a></p>
+                        <p><a href="teaflavor.html">茶葉風味</a></p>
+                        <p><a href="GotoPurchase.html">如何購買</a></p>
+                    </li>
+                    <li class="description">
+                        <h3>客戶服務</h3>
+                        <p><a href="contact.html">聯絡我們</a></p>
+                        <p><a href="">使用者條款</a></p>
+                        <p><a href="">隱私權政策</a></p>
+                    </li>
+                    <li class="description">
+                        <h3>聯絡我們</h3>
+                        <p>zhwahnchah01@gmail.com</p>
+                        <p>320桃園市中壢區復興路46號9樓</p>
+                        <p>+886 -1-1234 5678</p>
+                        <p>週一至週五 9:00~16:00</p>
+                    </li>
+                </ul>
+            </div>
+    
+    
+    
+            <div class="copyright">Copyright ZHWAHW CHAH © 2023</div>
+    
+        </footer>
 
-    <script>
-        $(window).scroll(function(){
-            var st = $(window).scrollTop()
-            if(st >= '100'){
-                $('header').addClass('act')
-            }else{
-                $('header').removeClass('act')
-            }
-        })
-    </script>
+        <script>
+            $(window).scroll(function () {
+                var st = $(window).scrollTop()
+                if (st >= '100') {
+                    $('header').addClass('act')
+                    $('.logo img').attr("src", "./img/logo2.png")
+                } else {
+                    $('header').removeClass('act')
+                    $('.logo img').attr("src", "./img/logo.png")
+                }
+            })
+        </script>
     <script>
         function increaseQuantity() {
           var quantityInput = document.getElementById('quantity');

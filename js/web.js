@@ -1,3 +1,13 @@
+$(document).ready(function () {
+    console.log('Document is ready.'); 
+    $('.hamburger, .menu_close').click(function(){
+        $('nav').toggleClass('act');
+    });
+    $('.search_open_btn').click(function(){
+        $('.search_bar').slideToggle();
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     var topBtn = document.getElementById("topBtn");
 
@@ -14,5 +24,3 @@ document.addEventListener("DOMContentLoaded", function() {
         document.documentElement.scrollTop = 0; 
     });
 });
-
-
