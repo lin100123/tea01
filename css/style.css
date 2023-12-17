@@ -9,6 +9,32 @@ img {
   max-width: 100%;
 }
 
+.phone-view-btn {
+  text-align: center;
+  display: none;
+}
+@media (max-width: 992px) {
+  .phone-view-btn {
+    display: inline-block;
+    background-color: #3D8B58;
+    border: 1px solid #ccc;
+    color: #000000;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 80px 80px;
+    width: 150px;
+    margin: 30px;
+  }
+  .phone-view-btn a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .phone-view-btn span {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
 .btn_viewmore {
   width: 100%;
   text-align: center;
@@ -269,7 +295,7 @@ header .header .right_side .right_btn.search_bar input {
   header .header .right_side .right_btn.search_bar {
     position: fixed;
     width: 100%;
-    top: 38px;
+    top: 35px;
     padding: 8px 0 !important;
     left: 0;
     background-color: rgba(53, 91, 48, 0.9490196078);
@@ -361,10 +387,10 @@ header.act .header .right_side .right_btn:first-child {
 .blockbody {
   display: block;
 }
-.blockbody .title {
+.blockbody .title, .blockbody .produc-title-phone {
   text-align: center;
 }
-.blockbody .title p {
+.blockbody .title p, .blockbody .produc-title-phone p {
   padding: 50px;
   font-size: 32px;
   letter-spacing: 10px;
@@ -375,27 +401,27 @@ header.act .header .right_side .right_btn:first-child {
   font-family: "Noto Serif TC", serif;
 }
 @media (max-width: 992px) {
-  .blockbody .title p {
-    font-size: 16px;
+  .blockbody .title p, .blockbody .produc-title-phone p {
+    font-size: 20px;
     letter-spacing: 3px;
     position: relative;
     bottom: -10px;
   }
 }
-.blockbody .title p img {
+.blockbody .title p img, .blockbody .produc-title-phone p img {
   position: absolute;
   width: 100px;
   left: -35px;
   bottom: 20px;
 }
 @media (max-width: 992px) {
-  .blockbody .title p img {
+  .blockbody .title p img, .blockbody .produc-title-phone p img {
     width: 20%;
     left: 20px;
-    bottom: 40px;
+    bottom: 45px;
   }
 }
-.blockbody .title p::before {
+.blockbody .title p::before, .blockbody .produc-title-phone p::before {
   content: "";
   position: absolute;
   top: 70%;
@@ -406,23 +432,23 @@ header.act .header .right_side .right_btn:first-child {
   background-color: #ccc;
 }
 @media (max-width: 992px) {
-  .blockbody .title p::before {
-    width: 50%;
-    top: 60%;
+  .blockbody .title p::before, .blockbody .produc-title-phone p::before {
+    width: 55%;
+    top: 63%;
   }
 }
-.blockbody .title .subtitle {
+.blockbody .title .subtitle, .blockbody .produc-title-phone .subtitle {
   display: block;
   margin-top: -40px;
   text-align: center;
   -webkit-box-align: center;
 }
-.blockbody .title .subtitle span {
+.blockbody .title .subtitle span, .blockbody .produc-title-phone .subtitle span {
   font-size: 16px;
 }
 @media (max-width: 992px) {
-  .blockbody .title .subtitle span {
-    font-size: 10px;
+  .blockbody .title .subtitle span, .blockbody .produc-title-phone .subtitle span {
+    font-size: 12px;
   }
 }
 .blockbody .image-container {
@@ -439,6 +465,31 @@ header.act .header .right_side .right_btn:first-child {
 }
 .blockbody .image-container img {
   margin: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.blockbody .image-container img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 999;
+}
+.blockbody .image-container img:hover::before {
+  opacity: 1;
 }
 .blockbody .phone-container {
   display: none;
@@ -479,7 +530,7 @@ header.act .header .right_side .right_btn:first-child {
     font-size: 16px;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: 10px auto;
   }
 }
 .blockbody .activity {
@@ -488,6 +539,11 @@ header.act .header .right_side .right_btn:first-child {
   align-items: center;
   background: linear-gradient(rgba(255, 255, 255, 0.7529411765), rgba(255, 255, 255, 0.7960784314)), url(../img/011.jpg);
   position: relative;
+}
+@media (max-width: 992px) {
+  .blockbody .activity {
+    display: none;
+  }
 }
 .blockbody .activity::before {
   display: inline-block;
@@ -550,6 +606,32 @@ header.act .header .right_side .right_btn:first-child {
 .blockbody .quality p {
   text-align: justify;
 }
+@media (max-width: 992px) {
+  .blockbody .quality {
+    margin: 50px auto 10px;
+    padding: 10px 20px;
+  }
+  .blockbody .quality .quality_title {
+    font-size: 16px;
+    background-color: #759139;
+  }
+  .blockbody .quality .quality_title::before {
+    width: 10px;
+    height: 10px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .blockbody .quality .quality_text {
+    width: 700px;
+    padding-right: 70px;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  .blockbody .quality .quality_text h2 {
+    padding: 5px 0;
+    margin-bottom: 10px;
+  }
+}
 .blockbody .producttitle {
   padding: 50px;
   font-size: 32px;
@@ -559,6 +641,11 @@ header.act .header .right_side .right_btn:first-child {
   align-items: center;
   position: relative;
   font-family: "Noto Serif TC", serif;
+}
+@media (max-width: 992px) {
+  .blockbody .producttitle {
+    display: none;
+  }
 }
 .blockbody .producttitle::before {
   content: "";
@@ -570,11 +657,24 @@ header.act .header .right_side .right_btn:first-child {
   height: 1px;
   background-color: #ccc;
 }
+.blockbody .produc-title-phone {
+  display: none;
+}
+@media (max-width: 992px) {
+  .blockbody .produc-title-phone {
+    display: block;
+  }
+}
 .blockbody .ProductDetails {
   display: flex;
   justify-content: center;
   width: 1200px;
   margin: auto;
+}
+@media (max-width: 992px) {
+  .blockbody .ProductDetails {
+    display: none;
+  }
 }
 .blockbody .card {
   width: 31.3333%;
@@ -601,6 +701,11 @@ header.act .header .right_side .right_btn:first-child {
   display: flex;
   margin: 200px 0;
   position: relative;
+}
+@media (max-width: 992px) {
+  .blockbody .promotion {
+    display: none;
+  }
 }
 .blockbody .promotion::before {
   display: inline-block;
@@ -638,9 +743,98 @@ header.act .header .right_side .right_btn:first-child {
   text-align: start;
   margin: 70px 0;
 }
+.blockbody .quality-phone {
+  display: none;
+}
+@media (max-width: 992px) {
+  .blockbody .quality-phone {
+    display: block;
+  }
+  .blockbody .quality-phone .promotion-phone {
+    display: flex;
+    margin: 10px auto;
+    padding: 20px;
+    position: relative;
+  }
+  .blockbody .quality-phone .promotion-phone::before {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../img/group4.png) no-repeat;
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  .blockbody .quality-phone .promotion-phone .promotion-img {
+    width: 700px;
+  }
+  .blockbody .quality-phone .promotion-phone .promotion-text {
+    width: 700px;
+    padding-left: 10px;
+    font-size: 12px;
+  }
+  .blockbody .quality-phone .promotion-phone .promotion-title {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #759139;
+    text-align: center;
+    color: #fff;
+    font-family: "Noto Serif TC", serif;
+  }
+  .blockbody .quality-phone .promotion-phone h2 {
+    padding: 10px 0;
+    margin-bottom: 10px;
+  }
+  .blockbody .quality-phone .promotion-phone p {
+    text-align: justify;
+  }
+}
+.blockbody .quality-phone2 {
+  display: none;
+}
+@media (max-width: 992px) {
+  .blockbody .quality-phone2 {
+    display: flex;
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+  .blockbody .quality-phone2 .quality_title {
+    font-size: 16px;
+    background-color: #759139;
+  }
+  .blockbody .quality-phone2 .quality_title::before {
+    width: 10px;
+    height: 10px;
+    right: 0px;
+    bottom: 0px;
+  }
+  .blockbody .quality-phone2 .quality_text {
+    width: 700px;
+    padding-right: 70px;
+    font-size: 12px;
+    padding-right: 10px;
+  }
+  .blockbody .quality-phone2 .quality_text h2 {
+    padding: 5px 0;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  .blockbody .quality-phone2 .quality_text .phone-btn {
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 150px;
+  }
+}
 .blockbody .gift-box {
   text-align: center;
   position: relative;
+}
+@media (max-width: 992px) {
+  .blockbody .gift-box {
+    display: none;
+  }
 }
 .blockbody .gift-box::before {
   display: inline-block;
@@ -767,6 +961,7 @@ footer .copyright {
 @media (max-width: 992px) {
   footer {
     background: rgba(243, 242, 242, 0.3098039216);
+    margin-top: 50px;
   }
   footer .container {
     flex-direction: column;
