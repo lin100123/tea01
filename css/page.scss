@@ -9,6 +9,13 @@ $roastedcolor : #846060;
     background-size: cover;
     width: 100%;
     height: 90vh;
+    @media (max-width: 992px){
+      height: 490px;
+    }   
+    @media (max-width: 428px){
+        background: url(../img/phone-banner.jpg) no-repeat center;
+        height: 350px;
+    }
     &.GotoPurchase{
     background: url(../img/02banner.jpg) no-repeat center;
     height: 80vh;
@@ -79,18 +86,39 @@ $roastedcolor : #846060;
       height: 80vh;
       width: 100%;
       background-size: cover;
+        @media (max-width: 992px){
+          height: 490px;
+        }   
+        @media (max-width: 428px){
+            background: url(../img/phone-banner-07.jpg) no-repeat center;
+            height: 350px;
+        }
       }
     &.SignUp{
       background: url(../img/banner_SignUp.jpg) no-repeat center;
       height: 80vh;
       width: 100%;
       background-size: cover;
+        @media (max-width: 992px){
+          height: 490px;
+        }   
+        @media (max-width: 428px){
+            background: url(../img/phone-banner-08.jpg) no-repeat center;
+            height: 350px;
+        }
       }
     &.Shopping-Cart{
       background: url(../img/Shopping-Cart.jpg) no-repeat center;
       height: 80vh;
       width: 100%;
       background-size: cover;
+        @media (max-width: 992px){
+          height: 490px;
+        }   
+        @media (max-width: 428px){
+            background: url(../img/phone-banner-09.jpg) no-repeat center;
+            height: 350px;
+        }
       }
 }
 .container{
@@ -313,7 +341,6 @@ $roastedcolor : #846060;
       }
     }
     #topBtn {
-      display: none;
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -324,11 +351,10 @@ $roastedcolor : #846060;
       padding: 15px 9px;
       cursor: pointer;
       font-size: 16px;
-      @media (max-width:992px) {
-        font-size: 10px;
-        padding: 9px 5px; 
-         
-    }
+        @media (max-width:992px) {
+          font-size: 10px;
+          padding: 9px 5px; 
+        }
     }
   
     #topBtn:hover {
@@ -340,9 +366,11 @@ $roastedcolor : #846060;
     .lnfo{
       display: flex;
       margin:50px auto ;
-    
       align-items: center;
       background: linear-gradient(#ffffffc0, #ffffffcb), url(../img/011.jpg);
+      @media (max-width:992px) {
+        flex-wrap: wrap;
+      }
       .lnfo-img{ 
        margin:50px;
           img{
@@ -356,6 +384,12 @@ $roastedcolor : #846060;
         line-height: 50px;
         padding-right:330px ;
         font-size: 24px;
+        @media (max-width:992px) {
+          width: 100%;
+          padding: 0 15px;
+          margin: 0;
+          font-size: 16px
+        }
         p{
           display: inline-block;
           text-align: justify;
@@ -367,6 +401,9 @@ $roastedcolor : #846060;
       margin: 100px 0;
       justify-content: center;
       position: relative;
+        @media (max-width:992px) {
+          margin: auto;
+        }
       &::before{
         display: inline-block;
         width: 510px;
@@ -375,7 +412,15 @@ $roastedcolor : #846060;
         content: "";
         position: absolute;
         right: -60px;
-        bottom: -200px;  
+        bottom: -200px;
+          @media (max-width:428px) {
+            width: 150px;
+            height: 150px;
+            right:-1px;
+            bottom: -50px;
+            background-size: cover;
+          }
+          
       }
       .source-title {
           font-size: 32px;
@@ -384,6 +429,11 @@ $roastedcolor : #846060;
           text-align: center;
           color: #fff;
           font-family: 'Noto Serif TC', serif;
+          @media (max-width:992px) {
+            padding: 0 15px;
+            font-size: 20px;
+            width: 100px;
+          }
       }
     
       .source-text {
@@ -391,6 +441,13 @@ $roastedcolor : #846060;
           padding-right: 70px;
           font-size: 24px;
           line-height: 70px;
+          @media (max-width:992px) {
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 0;
+            padding: 0 15px;
+            font-size: 16px;
+          }
       }
     
       h2 {
@@ -414,6 +471,9 @@ $roastedcolor : #846060;
       align-items: center;
       position: relative;
       font-family: 'Noto Serif TC', serif;
+      @media (max-width:992px) {
+        font-size: 20px;
+      }
     }
     .related-ttitle::before {
       content: "";
@@ -424,6 +484,9 @@ $roastedcolor : #846060;
       width: 180px;
       height: 1px;
       background-color: #ccc;
+      @media (max-width:992px) {
+        width: 30%;
+      }
     }
     .related{
       display: flex;
@@ -432,6 +495,9 @@ $roastedcolor : #846060;
       margin:50px auto ;
       margin-bottom: 350px;
       position: relative;
+      @media (max-width:992px) {
+        display: none;
+      }
       &::before{
         display: inline-block;
         width: 510px;
@@ -471,6 +537,47 @@ $roastedcolor : #846060;
                 }
             }
          }
+      }
+    }
+    
+    .swiper {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      
+      &-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+        
+        img {
+          display: block;
+          width: 100%;
+        }
+        .card_txt {
+          padding: 0 15px;
+          text-align: center;
+          font-size: 16px;
+          // .Shop{
+          //     margin: 5px 0;
+          // }
+          .related-name {
+              font-size: 16px;
+              padding: 10px 0 20px;
+              line-height: 2;
+              span{
+                font-size: 28px;
+                margin: 0 1 0px;
+              }
+          }
+       }
+      }
+    }
+    .related-phone{
+      display: none !important ; 
+      @media (max-width:992px) {
+        display: block !important ;
       }
     }
 //Product-Info--end--
@@ -902,7 +1009,7 @@ hr{
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      background-color: $secondarycolor3;
+      background-color: #eee;
       display: inline-block;
       margin: 8px;
     }
@@ -1074,7 +1181,6 @@ hr{
       position: relative;
       max-width: 700px;
       margin-top: 50px;
-      
     }
   } 
   @media (max-width:768px) {
@@ -1099,6 +1205,7 @@ hr{
         width: 150px;
         height: 150px;
         background-size: cover;
+        bottom: -600px;
       }
     }
   }
@@ -1115,9 +1222,12 @@ hr{
   display: flex;
   align-items: center;
   flex-direction:column;
-  margin: auto;
   margin-bottom: 290px;
   position: relative;
+  @media (max-width:992px) {
+    margin-bottom: 135px;
+    margin-top: 100px;
+  }
   &::before{
     display: inline-block;
     width: 500px;
@@ -1126,7 +1236,14 @@ hr{
     content: "";
     position: absolute;
     right:-150px;
-    top: -150px;  
+    top: -150px;
+    @media (max-width:428px) {
+      width: 150px;
+      height: 150px;
+      right: 0;
+      top: -150px;
+      background-size: cover;
+    }   
   }
   .Forgot{
     margin-left: 280px;
@@ -1157,7 +1274,7 @@ hr{
       }
     }
     p{
-      font-size: 32px;
+      font-size: 24px;
       
     }
     hr{
@@ -1174,7 +1291,7 @@ hr{
           background-color: $secondarycolor2;
           color: #fff;
           padding: 5px 90px;
-          font-size: 32px;
+          font-size: 24px;
           text-decoration: none;
           border-radius: 80px 80px;
           margin: 50px ;
@@ -1187,7 +1304,13 @@ hr{
             content: "";
             position: absolute;
             left: -850px;
-            top: 0px;  
+            top: 0px;
+            @media (max-width:428px) {
+              width: 150px;
+              height: 150px;
+              left: -110px;
+              background-size: cover;
+            }  
           }
       }
     }
@@ -1202,7 +1325,9 @@ hr{
     flex-direction: column;
     margin: auto;
     margin-bottom: 290px;
-  
+    @media (max-width:992px) {
+      margin-bottom: 30%;
+    }
     .phone-input,
     .email-input {
       border-radius: 10px;
@@ -1232,6 +1357,9 @@ hr{
   
     .btn_viewmore {
       position: relative;
+      @media (max-width:992px) {
+        display: block;
+      }
       &::before{
         display: inline-block;
         width: 800px;
@@ -1239,7 +1367,14 @@ hr{
         background: url(../img/Sign01.png) no-repeat;
         content: "";
         position: absolute;
-        right: -460px; 
+        right: -460px;
+        @media (max-width:428px) {
+          width: 150px;
+          height: 150px;
+          right: 0px;
+          bottom: -80px;
+          background-size: cover;
+        }
       }
       .viewmore-link {
         padding: 5px 90px;

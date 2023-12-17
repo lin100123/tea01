@@ -5,6 +5,17 @@
   width: 100%;
   height: 90vh;
 }
+@media (max-width: 992px) {
+  .banner_area {
+    height: 490px;
+  }
+}
+@media (max-width: 428px) {
+  .banner_area {
+    background: url(../img/phone-banner.jpg) no-repeat center;
+    height: 350px;
+  }
+}
 .banner_area.GotoPurchase {
   background: url(../img/02banner.jpg) no-repeat center;
   height: 80vh;
@@ -96,17 +107,50 @@
   width: 100%;
   background-size: cover;
 }
+@media (max-width: 992px) {
+  .banner_area.Login {
+    height: 490px;
+  }
+}
+@media (max-width: 428px) {
+  .banner_area.Login {
+    background: url(../img/phone-banner-07.jpg) no-repeat center;
+    height: 350px;
+  }
+}
 .banner_area.SignUp {
   background: url(../img/banner_SignUp.jpg) no-repeat center;
   height: 80vh;
   width: 100%;
   background-size: cover;
 }
+@media (max-width: 992px) {
+  .banner_area.SignUp {
+    height: 490px;
+  }
+}
+@media (max-width: 428px) {
+  .banner_area.SignUp {
+    background: url(../img/phone-banner-08.jpg) no-repeat center;
+    height: 350px;
+  }
+}
 .banner_area.Shopping-Cart {
   background: url(../img/Shopping-Cart.jpg) no-repeat center;
   height: 80vh;
   width: 100%;
   background-size: cover;
+}
+@media (max-width: 992px) {
+  .banner_area.Shopping-Cart {
+    height: 490px;
+  }
+}
+@media (max-width: 428px) {
+  .banner_area.Shopping-Cart {
+    background: url(../img/phone-banner-09.jpg) no-repeat center;
+    height: 350px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -336,7 +380,6 @@
 }
 
 #topBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -365,6 +408,11 @@
   align-items: center;
   background: linear-gradient(rgba(255, 255, 255, 0.7529411765), rgba(255, 255, 255, 0.7960784314)), url(../img/011.jpg);
 }
+@media (max-width: 992px) {
+  .lnfo {
+    flex-wrap: wrap;
+  }
+}
 .lnfo .lnfo-img {
   margin: 50px;
 }
@@ -379,6 +427,14 @@
   padding-right: 330px;
   font-size: 24px;
 }
+@media (max-width: 992px) {
+  .lnfo .lnfo-text {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    font-size: 16px;
+  }
+}
 .lnfo .lnfo-text p {
   display: inline-block;
   text-align: justify;
@@ -390,6 +446,11 @@
   justify-content: center;
   position: relative;
 }
+@media (max-width: 992px) {
+  .source {
+    margin: auto;
+  }
+}
 .source::before {
   display: inline-block;
   width: 510px;
@@ -400,6 +461,15 @@
   right: -60px;
   bottom: -200px;
 }
+@media (max-width: 428px) {
+  .source::before {
+    width: 150px;
+    height: 150px;
+    right: -1px;
+    bottom: -50px;
+    background-size: cover;
+  }
+}
 .source .source-title {
   font-size: 32px;
   background-color: #759139;
@@ -408,11 +478,27 @@
   color: #fff;
   font-family: "Noto Serif TC", serif;
 }
+@media (max-width: 992px) {
+  .source .source-title {
+    padding: 0 15px;
+    font-size: 20px;
+    width: 100px;
+  }
+}
 .source .source-text {
   width: 1100px;
   padding-right: 70px;
   font-size: 24px;
   line-height: 70px;
+}
+@media (max-width: 992px) {
+  .source .source-text {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding: 0 15px;
+    font-size: 16px;
+  }
 }
 .source h2 {
   padding: 10px 0;
@@ -434,6 +520,11 @@
   position: relative;
   font-family: "Noto Serif TC", serif;
 }
+@media (max-width: 992px) {
+  .related-ttitle {
+    font-size: 20px;
+  }
+}
 
 .related-ttitle::before {
   content: "";
@@ -445,6 +536,11 @@
   height: 1px;
   background-color: #ccc;
 }
+@media (max-width: 992px) {
+  .related-ttitle::before {
+    width: 30%;
+  }
+}
 
 .related {
   display: flex;
@@ -453,6 +549,11 @@
   margin: 50px auto;
   margin-bottom: 350px;
   position: relative;
+}
+@media (max-width: 992px) {
+  .related {
+    display: none;
+  }
 }
 .related::before {
   display: inline-block;
@@ -490,6 +591,45 @@
 .related .card .card_txt .related-name span {
   font-size: 32px;
   margin: 0 1 0px;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+.swiper-slide .card_txt {
+  padding: 0 15px;
+  text-align: center;
+  font-size: 16px;
+}
+.swiper-slide .card_txt .related-name {
+  font-size: 16px;
+  padding: 10px 0 20px;
+  line-height: 2;
+}
+.swiper-slide .card_txt .related-name span {
+  font-size: 28px;
+  margin: 0 1 0px;
+}
+
+.related-phone {
+  display: none !important;
+}
+@media (max-width: 992px) {
+  .related-phone {
+    display: block !important;
+  }
 }
 
 .contact_item {
@@ -936,7 +1076,7 @@ hr {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: #3D8B58;
+  background-color: #eee;
   display: inline-block;
   margin: 8px;
 }
@@ -1137,6 +1277,7 @@ hr {
     width: 150px;
     height: 150px;
     background-size: cover;
+    bottom: -600px;
   }
 }
 
@@ -1149,9 +1290,14 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin: auto;
   margin-bottom: 290px;
   position: relative;
+}
+@media (max-width: 992px) {
+  .login-item {
+    margin-bottom: 135px;
+    margin-top: 100px;
+  }
 }
 .login-item::before {
   display: inline-block;
@@ -1162,6 +1308,15 @@ hr {
   position: absolute;
   right: -150px;
   top: -150px;
+}
+@media (max-width: 428px) {
+  .login-item::before {
+    width: 150px;
+    height: 150px;
+    right: 0;
+    top: -150px;
+    background-size: cover;
+  }
 }
 .login-item .Forgot {
   margin-left: 280px;
@@ -1189,7 +1344,7 @@ hr {
   margin: 50px 0 80px;
 }
 .login-item p {
-  font-size: 32px;
+  font-size: 24px;
 }
 .login-item hr {
   width: 30%;
@@ -1205,7 +1360,7 @@ hr {
   background-color: #563026;
   color: #fff;
   padding: 5px 90px;
-  font-size: 32px;
+  font-size: 24px;
   text-decoration: none;
   border-radius: 80px 80px;
   margin: 50px;
@@ -1221,6 +1376,14 @@ hr {
   left: -850px;
   top: 0px;
 }
+@media (max-width: 428px) {
+  .login-item .SignUp-btn .SignUp-link::before {
+    width: 150px;
+    height: 150px;
+    left: -110px;
+    background-size: cover;
+  }
+}
 
 .sign-item {
   display: flex;
@@ -1228,6 +1391,11 @@ hr {
   flex-direction: column;
   margin: auto;
   margin-bottom: 290px;
+}
+@media (max-width: 992px) {
+  .sign-item {
+    margin-bottom: 30%;
+  }
 }
 .sign-item .phone-input,
 .sign-item .email-input {
@@ -1255,6 +1423,11 @@ hr {
 .sign-item .btn_viewmore {
   position: relative;
 }
+@media (max-width: 992px) {
+  .sign-item .btn_viewmore {
+    display: block;
+  }
+}
 .sign-item .btn_viewmore::before {
   display: inline-block;
   width: 800px;
@@ -1263,6 +1436,15 @@ hr {
   content: "";
   position: absolute;
   right: -460px;
+}
+@media (max-width: 428px) {
+  .sign-item .btn_viewmore::before {
+    width: 150px;
+    height: 150px;
+    right: 0px;
+    bottom: -80px;
+    background-size: cover;
+  }
 }
 .sign-item .btn_viewmore .viewmore-link {
   padding: 5px 90px;
