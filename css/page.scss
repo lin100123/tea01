@@ -326,6 +326,7 @@ $roastedcolor : #846060;
       margin: 5px;
       @media (max-width:768px) {
         font-size: 16px;
+        padding: 10px 30px;
       }
     }
     .View{
@@ -338,6 +339,7 @@ $roastedcolor : #846060;
       margin: 15px;
       @media (max-width:768px) {
         font-size: 16px;
+        padding: 10px 30px;
       }
     }
     #topBtn {
@@ -352,8 +354,8 @@ $roastedcolor : #846060;
       cursor: pointer;
       font-size: 16px;
         @media (max-width:992px) {
-          font-size: 10px;
-          padding: 9px 5px; 
+          font-size: 16px;
+          padding: 11px 5px; 
         }
     }
   
@@ -1040,7 +1042,7 @@ hr{
   }
 }
 .phone-btn{
-  padding: 10px 50px;
+  padding: 13px 50px;
   margin: 20px 31% 50px;
   background-color: $secondarycolor3;
   a{
@@ -1100,6 +1102,7 @@ hr{
       width: 100%;
       padding: 0 15px;
       flex-wrap: wrap;
+      margin: 20px 0;
       .News-text{
         margin: auto;
         padding: 15px;
@@ -1113,7 +1116,7 @@ hr{
       }
     }
     .Next-btn{
-      margin: 20px 0;
+      margin: 50px 0;
       &::before{
         display: none;
       }
@@ -1205,7 +1208,7 @@ hr{
         width: 150px;
         height: 150px;
         background-size: cover;
-        bottom: -600px;
+        bottom: -900px;
       }
     }
   }

@@ -22,7 +22,7 @@ img{
             background-color: $secondarycolor3;
             border: 1px solid #ccc;
             color: #000000;
-            padding: 5px 10px;
+            padding: 10px;
             font-size: 16px;
             border-radius: 80px 80px;
             width: 150px;
@@ -108,7 +108,6 @@ img{
 }
 
 #topBtn {
-    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -120,8 +119,8 @@ img{
     cursor: pointer;
     font-size: 16px;
     @media (max-width:992px) {
-        font-size: 10px;
-        padding: 9px 5px; 
+        font-size: 16px;
+        padding: 11px 5px; 
          
     }
   }
@@ -192,7 +191,7 @@ header {
             img {
                 width: 100px;
                 @media (max-width:992px) {
-                    width: 30px;
+                    width: 40px;
                 }
             }
         }
@@ -258,18 +257,18 @@ header {
             @media (max-width:992px) {
                 display: flex;
                 flex: auto;
-                height: 38px;
+                height: 45px;
                 background-color: #fff;
                 align-items: center;
                 .hamburger{
                     position: relative;
-                    width: 25px;
-                    height: 25px;
+                    width: 30px;
+                    height: 30px;
                     margin-right: 10px;
                     span{
                         top: 50%;
                         position: absolute;
-                        width: 20px;
+                        width: 23px;
                         height: 1px;
                         background-color: #000;
                         box-shadow:0 8px  0 #000,0 -8px 0 #000;
@@ -291,6 +290,7 @@ header {
                     input{
                         display: none;
                     }
+                    
                     @media (max-width:992px) {
                         
                             position: fixed;
@@ -577,9 +577,6 @@ header {
             font-size: 24px;
             margin: 50px;
             width: 40%;
-
-            p {}
-
             .btn_viewmore {
                 margin-top: 40px;
                 text-align: start;
@@ -834,7 +831,7 @@ header {
                   }
             }
             .quality_text {
-                width: 700px;
+                width: 750px;
                 padding-right: 70px;
                 font-size: 12px;
                 padding-right: 10px;
@@ -845,7 +842,7 @@ header {
                     text-align: center;
                 }
                 .phone-btn{
-                    margin-top: 15px;
+                    margin-top: 8px;
                     margin-left:10px ;
                     width: 150px;
                 }

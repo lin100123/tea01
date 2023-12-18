@@ -19,7 +19,7 @@ img {
     background-color: #3D8B58;
     border: 1px solid #ccc;
     color: #000000;
-    padding: 5px 10px;
+    padding: 10px;
     font-size: 16px;
     border-radius: 80px 80px;
     width: 150px;
@@ -106,7 +106,6 @@ img {
 }
 
 #topBtn {
-  display: none;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -120,8 +119,8 @@ img {
 }
 @media (max-width: 992px) {
   #topBtn {
-    font-size: 10px;
-    padding: 9px 5px;
+    font-size: 16px;
+    padding: 11px 5px;
   }
 }
 
@@ -195,7 +194,7 @@ header .header .logo img {
 }
 @media (max-width: 992px) {
   header .header .logo img {
-    width: 30px;
+    width: 40px;
   }
 }
 header .header nav {
@@ -255,20 +254,20 @@ header .header .m_menu {
   header .header .m_menu {
     display: flex;
     flex: auto;
-    height: 38px;
+    height: 45px;
     background-color: #fff;
     align-items: center;
   }
   header .header .m_menu .hamburger {
     position: relative;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
   }
   header .header .m_menu .hamburger span {
     top: 50%;
     position: absolute;
-    width: 20px;
+    width: 23px;
     height: 1px;
     background-color: #000;
     box-shadow: 0 8px 0 #000, 0 -8px 0 #000;
@@ -810,7 +809,7 @@ header.act .header .right_side .right_btn:first-child {
     bottom: 0px;
   }
   .blockbody .quality-phone2 .quality_text {
-    width: 700px;
+    width: 750px;
     padding-right: 70px;
     font-size: 12px;
     padding-right: 10px;
@@ -822,7 +821,7 @@ header.act .header .right_side .right_btn:first-child {
     text-align: center;
   }
   .blockbody .quality-phone2 .quality_text .phone-btn {
-    margin-top: 15px;
+    margin-top: 8px;
     margin-left: 10px;
     width: 150px;
   }
