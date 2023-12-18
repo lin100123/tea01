@@ -17,6 +17,7 @@ img{
 .phone-view-btn{
         text-align: center;
         display: none;
+        position: relative;
         @media (max-width:992px) {
             display: inline-block;
             background-color: $secondarycolor3;
@@ -35,6 +36,17 @@ img{
                 text-decoration: none;
                 color: #000;      
             }
+        }
+        &::before{
+            display: inline-block;
+            width: 110px;
+            height: 120px;
+            background: url(../img/page-3-2.png) no-repeat;
+            content: "";
+            position: absolute;
+            right: -130px;
+            bottom: -80px;
+            background-size: cover;
         }
 }
 .btn_viewmore {
@@ -114,14 +126,14 @@ img{
     background-color: $maincolor;
     color: #fff;
     border: none;
-    border-radius: 50%;
+    border-radius: 0 40px 0 40px ;
     padding: 16px 9px;
     cursor: pointer;
     font-size: 20px;
     box-shadow:5px 5px 50px 5px #eee;
     @media (max-width:992px) {
         font-size: 16px;
-        padding: 11px 5px; 
+        padding: 13px 10px; 
         bottom: 20px;
         right: 10px;
     }
@@ -149,18 +161,15 @@ header {
     width: 100%;
     z-index: 1;
     .header {
-       
+        height: 192px;
         max-width: 1200px;
         margin: auto;
         display: flex;
         position: relative;
         align-items: center;
-        @media (min-width:1400px) {
-            width: 1400px;
-             height: 192px;
-        }
         @media (max-width: 992px) {
             max-width:unset;
+            height: 40px;
             nav {
                 display: block;
                 position: absolute;
@@ -176,6 +185,7 @@ header {
             .right_side {
                 display: none;
             }
+            
         }
 
         .logo {
@@ -184,16 +194,16 @@ header {
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            padding: 10px 20px 20px;
+            padding: 10px 15px 20px;
             border-radius: 0 0 80px 80px;
-            
             @media (max-width:992px) {
                 padding: 5px 10px 5px 10px;
             }
             img {
                 width: 100px;
+                margin: 0 6px 0 5px;
                 @media (max-width:992px) {
-                    width: 40px;
+                width: 40px;
                 }
             }
         }
@@ -356,8 +366,8 @@ header {
                 }
                 img {
                     filter: brightness(999);
-
                 }
+                
             }
 
             nav {
@@ -472,22 +482,36 @@ header {
         align-items: center;
         margin-bottom: 20px;
         padding: 50px 0;
-        
-        @media (max-width:992px){
+    
+        @media (max-width: 992px) {
             display: none;
         }
+    
         .hot-img {
+            position: relative;
             margin: 10px;
+            width: 300px; 
+            height: 300px;
             border-radius: 50%;
             overflow: hidden;
-            height: 300px;
-            position: relative;
-            span{
-                display: flex;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; 
             }
-              &:hover {
+    
+            span {
                 position: absolute;
-                background: rgba(0, 0, 0, 0.5);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%); 
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
+    
+            &:hover {
+                
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -496,7 +520,13 @@ header {
                 font-weight: bold;
                 text-align: center;
                 transition: opacity 0.3s;
-              }
+                
+                span {
+                    background: rgba(0, 0, 0, 0.5);
+                    width: 300px;
+                    opacity: 1;
+                }
+            }
         }
     }
     .phone-container{
@@ -536,8 +566,20 @@ header {
                     justify-content: center;
                     margin: 10px auto;
                 }
+                &::before{
+                    display: inline-block;
+                    width: 110px;
+                    height: 150px;
+                    background: url(../img/page-5-02.png) no-repeat;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -430px;
+                    background-size: cover;
+                }
             }
         }
+        
     }
     .activity {
         display: flex;
@@ -556,7 +598,14 @@ header {
             content: "";
             position: absolute;
             right: -240px;
-            bottom: -100px;  
+            bottom: -100px;
+            @media (max-width:1400px) {
+                width: 200px;
+                height: 200px;
+                right: -10px;
+                bottom: -150px;
+                background-size:cover ;
+            }    
           }
         .activity_img {
             height: 555px;
@@ -598,7 +647,14 @@ header {
                 content: "";
                 position: absolute;
                 right: 430px;
-                bottom: -30px;  
+                bottom: -30px;
+                @media (max-width:1400px) {
+                    background-size: cover;
+                    width: 180px;
+                    height: 180px;
+                    bottom: 10px;
+                }
+                    
               }
         }
 
@@ -618,16 +674,13 @@ header {
         }
         @media (max-width:992px) {
             // width: 428px;
-            margin: 50px auto 10px;
+            margin: 100px auto 10px;
             padding: 10px 20px;
             .quality_title {
                 font-size: 16px;
                 background-color: $secondarycolor;
                 &::before{
-                    width: 10px;
-                    height: 10px;
-                    right: 0px;
-                    bottom: 0px;  
+                    display: none;  
                   }
             }
             .quality_text {
@@ -723,7 +776,14 @@ header {
             content: "";
             position: absolute;
             right: -130px;
-            bottom: 350px;  
+            bottom: 350px;
+            @media (max-width:1400px) {
+                width: 280px;
+                height: 320px;
+                right: -15px;
+                bottom: 600px;
+                background-size: cover;
+            }  
           }
 
         .promotion_img {
@@ -859,7 +919,13 @@ header {
             content: "";
             position: absolute;
             left: 0;
-            bottom: -80px;  
+            bottom: -80px;
+            @media (max-width:1400px) {
+                width: 310px;
+                height: 310px;
+                bottom: 10px;
+                background-size: cover;
+            }  
           }
         .gift-box_title {
             width: 1000px;
@@ -1042,4 +1108,5 @@ footer {
             padding: 5px;
         }
     }
+    
 }
