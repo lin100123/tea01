@@ -24,3 +24,4 @@ document.addEventListener("DOMContentLoaded", function() {
         document.documentElement.scrollTop = 0; 
     });
 });
+

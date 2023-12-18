@@ -63,22 +63,27 @@
             </div>
         </div>
         
-        <section class="Login"> 
+        <section class="Login">
             <form action="">
                 <div class="login-item">
                     <input type="text" placeholder="信箱/手機號碼">
-                    <input type="password" placeholder="密碼">
-                    <div class="Forgot"><a href="">忘記密碼?</a></div>
+                    <div class="password-container">
+                        <input type="password" id="passwordInput" placeholder="密碼">
+                        <span class="eye" id="togglePassword"><i class="bi bi-eye-fill"></i></span>
+                    </div>
+                    <div class="Forgot"><a href="#">忘記密碼?</a></div>
                     <div class="btn_viewmore">
                         <a href="#" class="viewmore-link">登入</a>
                     </div>
                     <p>還不是會員?</p>
-                    <hr>   
+                    <hr>
                     <div class="SignUp-btn">
                         <a href="SignUp.html" class="SignUp-link">註冊</a>
                     </div>
                 </div>
+            </form>
         </section>
+        
         <footer>
             <div class="container">
                 <div class="footerLogo">
@@ -136,6 +141,23 @@
                     $('.logo img').attr("src", "./img/logo.png")
                 }
             })
+        </script>
+         <!--切換密碼顯示--> 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            var passwordInput = document.getElementById('passwordInput');
+            var togglePassword = document.getElementById('togglePassword');
+
+            togglePassword.addEventListener('click', function () {
+                if (passwordInput.type === 'password') {
+                    passwordInput.type = 'text';
+                    togglePassword.innerHTML = '<i class="bi bi-eye-slash-fill"></i>';
+                } else {
+                    passwordInput.type = 'password';
+                    togglePassword.innerHTML = '<i class="bi bi-eye-fill"></i>';
+                }
+                });
+            });
         </script>
     <button id="topBtn" title="TOP">TOP</button>
     <script src="script.js"></script>
