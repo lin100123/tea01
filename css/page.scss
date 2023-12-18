@@ -367,6 +367,10 @@ $roastedcolor : #846060;
       padding: 16px 9px;
       cursor: pointer;
       font-size: 20px;
+        @media (max-width:1400px) {
+          bottom: 30px;
+          right: 30px;
+        }
         @media (max-width:992px) {
           font-size: 16px;
           padding: 13px 10px;
@@ -571,7 +575,9 @@ $roastedcolor : #846060;
         
         img {
           display: block;
-          width: 100%;
+          width: 80%;
+          margin-left: 10%;
+          margin-bottom: 20px;
         }
         .card_txt {
           padding: 0 15px;
@@ -588,6 +594,9 @@ $roastedcolor : #846060;
                 font-size: 28px;
                 margin: 0 1 0px;
               }
+          }
+          .Shop{
+            margin-top: auto;
           }
        }
       }
@@ -734,6 +743,12 @@ $roastedcolor : #846060;
       width: 300px;
       height: 300px;
       background-size: cover;
+    }
+    @media (max-width:428px) {
+      width: 150px;
+      height: 150px;
+      background-size: cover;
+      bottom: 20px;
     }
   }
   .flavor-title{
@@ -1240,7 +1255,10 @@ hr{
       bottom: -930px;
       @media (max-width:1400px) {
         bottom: -1530px;
-      }  
+      }
+      @media (max-width:428px) {
+         display: none;  
+      }   
     }
     .store-btn{
       text-align: end;
@@ -1295,11 +1313,12 @@ hr{
         width: 150px;
         height: 150px;
         background-size: cover;
-        bottom: -900px;
+        bottom: -800px;
       }
     }
   }
 }
+
 hr{
   margin: 200px;
   border: 0px;
@@ -1314,6 +1333,21 @@ hr{
   flex-direction:column;
   margin-bottom: 290px;
   position: relative;
+  .password-container {
+    position: relative;
+
+    #togglePassword {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-140%);
+        width: 20px;
+        height: 20px;
+        background: url('path/to/eye-icon.png') no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
+  }
   @media (max-width:992px) {
     margin-bottom: 135px;
     margin-top: 100px;
@@ -1402,7 +1436,9 @@ hr{
             right: 700px;
             background-size: cover;
             @media (max-width:1400px) {
-              right: 40px;
+              width: 350px;
+              height: 350px;
+              right: 480px;
             }
             @media (max-width:428px) {
               width: 150px;
@@ -1460,15 +1496,24 @@ hr{
       }
       &::before{
         display: inline-block;
-        width: 800px;
-        height: 800px;
+        width: 400px;
+        height: 400px;
         background: url(../img/Sign01.png) no-repeat;
         content: "";
         position: absolute;
-        right: -460px;
+        right: 0px;
+        bottom:-200px;
+        background-size: cover;
+        @media (max-width:1440px) {
+          width: 350px;
+          height: 350px;
+          right: 0px;
+          bottom: -200px;
+          background-size: cover;
+        }
         @media (max-width:428px) {
-          width: 150px;
-          height: 150px;
+          width: 200px;
+          height: 200px;
           right: 0px;
           bottom: -80px;
           background-size: cover;
@@ -1526,10 +1571,12 @@ hr{
     @media (max-width:1400px) {
       width: 300px;
       height: 300px;
-      bottom: 700px;
+      bottom: 650px;
     }
     @media (max-width:428px) {
-      display: none;
+      width: 150px;
+      height: 150px;
+      bottom: 800px  
     }  
   }
   .checkout-nav {
@@ -1539,10 +1586,10 @@ hr{
   margin-top: 100px;
   width: 815px;
   @media (max-width:1400px) {
-      margin-left: 339px;;
+      display: none;
   }
   @media (max-width:428px) {
-    margin-left: 0px;
+    display: none;
   }  
     .step-active {
       margin: 0 80px;
@@ -1596,6 +1643,9 @@ hr{
   width: 1200px;
   margin: auto;
   position: relative;
+  @media (max-width:768px) {
+    display: none;
+  } 
   &::before {
     content: '';
     position: absolute;
@@ -1618,6 +1668,10 @@ hr{
   background-color: #F7F7F7;
   padding: 20px;
   position: relative;
+  @media (max-width:768px) {
+    flex-direction: column;
+    width: 100%;
+  }
   &::before {
     content: '×';
     position: absolute;
@@ -1626,26 +1680,67 @@ hr{
     width: 200px;
     color: #000000;
     cursor: pointer;
+    @media (max-width:768px) {
+      right: 0;
+      width: 25px;
+    }
   }
   .Product{
     display: flex;
     width: 30%;
     align-items: center;
+    @media (max-width:768px) {
+      width: 50%;
+      flex-wrap: wrap;
+      img{
+        margin-left: 35px;
+      }
+      p{
+        margin-left: 5px;
+      }
+    }
   }
   .Discount{
     align-items: center;
     display: flex;
     margin: 0 10px;
+      @media (max-width:768px) {
+        display: block;
+        text-align: right;
+        margin: 0;
+        position: relative;
+        &::before {
+            content: "尚無優惠";
+            position: absolute;
+            bottom: -43px; 
+            left: 341px;
+            color: #555; 
+            white-space: nowrap; 
+            font-size: 12px;
+        }
+        p {
+            display: none; 
+        }
+      } 
   }
   .Price{
     align-items: center;
     display: flex;
     margin: 0 206px;
+    @media (max-width:768px) {
+      display: block;
+      text-align: right;
+      margin: 0;
+      margin-bottom: 20px;
+    }
   }
   .quantity-selector {
     display: flex;
     align-items: center;
     margin-left: -35px;
+    @media (max-width:768px) {
+      margin-left: 0;
+    }
   }
 
   .quantity-btn {
@@ -1654,17 +1749,33 @@ hr{
     cursor: pointer;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
+    @media (max-width:768px) {
+      padding: 6px 10px;
+    }
   }
 
   .quantity-input {
     width: 60px;
     text-align: center;
     margin: 0 5px;
+    @media (max-width:768px) {
+      width: 80px;
+      height: 30px;
+    }
   }
   .Total{
     display: flex;
     align-items: center;
     margin: auto;
+    margin-left: 100px;
+    @media (max-width:768px) {
+      display: block;
+      text-align: right;
+      margin: 0;
+      font-size: 16px;
+      font-weight: 800;
+      margin-left: 178px;
+    }
   }
 }
 .Discount-text{
@@ -1673,6 +1784,9 @@ hr{
   margin: auto;
   position: relative;
   margin-top: 30px;
+  @media (max-width:768px) {
+    width: 100%;
+  }
   &::before {
     content: '';
     position: absolute;
@@ -1680,6 +1794,9 @@ hr{
     height: 1px;
     width: 1200px;
     background-color: #000000;
+      @media (max-width:768px) {
+        width: 40%;
+      }
     }
   }
 .Discount-Block{
@@ -1690,14 +1807,34 @@ hr{
   background-color: #F7F7F7;
   padding: 20px 20px 150px 20px;
   position: relative;
+    @media (max-width:768px) {
+      width: 100%;
+      display: block;
+      padding: 20px 20px 50px 20px;
+    }
   .Discount-txt{
     line-height: 50px;
     font-size: 24px;
+      @media (max-width:768px) {
+        font-size: 16px;   
+      }
+      p{
+        display: flex;
+        margin: 15px 0;
+        @media (max-width:768px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
       span{
         color: #fff;
         background-color: #3D8B58;
         padding: 2px 5px;
         margin: 0 20px ;
+        @media (max-width:768px) {
+          margin: 0;
+          padding: 0 10px;
+        }
       }
    }
    .store-btn{
@@ -1720,6 +1857,9 @@ hr{
 }
 .Add-on-Items{
     margin:200px 0;
+    @media (max-width:768px) {
+      margin: 0;
+    }
     .add-text{
       display: flex;
       width: 1200px;
@@ -1727,6 +1867,9 @@ hr{
       position: relative;
       margin-top: 30px;
       margin-bottom: 30px;
+      @media (max-width:768px) {
+        width: 428px;
+      }
       &::before {
         content: '';
         position: absolute;
@@ -1741,6 +1884,9 @@ hr{
     justify-content: center;
     width: 1200px;
     margin: auto;
+    @media (max-width:768px) {
+      display: none;
+    }
 }
 
 .card {
@@ -1773,18 +1919,31 @@ hr{
     }
 }
 
+
+
 .Step2{
   display: flex;
   flex-wrap:wrap;
   margin-bottom: 500px;
   margin: auto;
   width: 1200px;
+  @media (max-width:768px) {
+    flex-direction: column;
+    width: 768px;
+    padding: 15px;
+  }
+  @media (max-width:428px) {
+    width: 428px;
+  }
   .step2-title{
     font-size: 36px;
     position: relative;
     margin-top: 30px;
     margin-bottom: 50px;
     text-align: center;
+    @media (max-width:768px) {
+      font-size: 28px;
+    }
     &::before {
     content: '';
     position: absolute;
@@ -1797,6 +1956,9 @@ hr{
   }
   form{
     width: 50%;
+    @media (max-width:768px) {
+      width: 100%;
+    }
     .step2-item{
       
       display: flex;
@@ -1829,6 +1991,12 @@ hr{
   padding: 30px 100px;
   margin-bottom: 500px;
   position: relative;
+  
+  @media (max-width:768px) {
+      width: 100%;
+      margin-bottom: 100px;
+      margin-top: 50px;
+    } 
   &::before{
     display: inline-block;
     width: 400px;
@@ -1841,7 +2009,14 @@ hr{
     background-size: cover;
     @media (max-width:1400px) {
       right: 900px;
-    }  
+    }
+    @media (max-width:428px) {
+      width: 150px; 
+      height: 150px;
+      bottom: -150px;
+      right: 270px;
+    }
+     
   }
   .Check{
     text-align: center;
@@ -1853,6 +2028,9 @@ hr{
     margin-top:80px ;
     margin-bottom: 20px;
     width: 395px;
+    @media (max-width:768px) {
+      width: 225px;
+    }
    }
    .Shipping-Fee{
     display: flex;
@@ -1860,6 +2038,9 @@ hr{
     margin-top:150px ;
     margin-bottom: 20px;
     width: 395px;
+    @media (max-width:768px) {
+      width: 225px;
+    }
    }
    span{
     color: #4969A7;
@@ -1876,8 +2057,36 @@ hr{
       background-color: #000000;
       }
    }
-   .btn_viewmore{
-      margin: 60px 0;
-   }
+    .btn_viewmore{
+        margin: 60px 0;
+    }
+    a{
+      display: none;
+      @media (max-width:768px) {
+        display: block;
+        margin: 50px 150px;
+        text-align: center;
+      }
+      @media (max-width:428px) {
+        margin: 50px 0;
+      }
+      
+    }
+    
   }
+.step123{
+  display: none;
+  @media (max-width:768px) {
+    display: block;
+    text-align: center;
+    h3{
+      font-size: 20px;
+      margin-top: 100px;
+    }
+    p{
+      font-size: 16px;
+      color: #8B9FBE;
+    }
+  }
+}
 //Shop--end

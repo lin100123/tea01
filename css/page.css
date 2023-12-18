@@ -411,6 +411,12 @@
   cursor: pointer;
   font-size: 20px;
 }
+@media (max-width: 1400px) {
+  #topBtn {
+    bottom: 30px;
+    right: 30px;
+  }
+}
 @media (max-width: 992px) {
   #topBtn {
     font-size: 16px;
@@ -628,7 +634,9 @@
 }
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 20px;
 }
 .swiper-slide .card_txt {
   padding: 0 15px;
@@ -643,6 +651,9 @@
 .swiper-slide .card_txt .related-name span {
   font-size: 28px;
   margin: 0 1 0px;
+}
+.swiper-slide .card_txt .Shop {
+  margin-top: auto;
 }
 
 .related-phone {
@@ -794,6 +805,14 @@
     width: 300px;
     height: 300px;
     background-size: cover;
+  }
+}
+@media (max-width: 428px) {
+  .flavor-freshing::before {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    bottom: 20px;
   }
 }
 .flavor-freshing .flavor-title {
@@ -1336,6 +1355,11 @@ hr {
     bottom: -1530px;
   }
 }
+@media (max-width: 428px) {
+  .About .about-text::before {
+    display: none;
+  }
+}
 .About .about-text .store-btn {
   text-align: end;
   margin: 50px -10px;
@@ -1395,7 +1419,7 @@ hr {
     width: 150px;
     height: 150px;
     background-size: cover;
-    bottom: -900px;
+    bottom: -800px;
   }
 }
 
@@ -1410,6 +1434,20 @@ hr {
   flex-direction: column;
   margin-bottom: 290px;
   position: relative;
+}
+.login-item .password-container {
+  position: relative;
+}
+.login-item .password-container #togglePassword {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-140%);
+  width: 20px;
+  height: 20px;
+  background: url("path/to/eye-icon.png") no-repeat;
+  background-size: contain;
+  cursor: pointer;
 }
 @media (max-width: 992px) {
   .login-item {
@@ -1504,7 +1542,9 @@ hr {
 }
 @media (max-width: 1400px) {
   .login-item .SignUp-btn .SignUp-link::before {
-    right: 40px;
+    width: 350px;
+    height: 350px;
+    right: 480px;
   }
 }
 @media (max-width: 428px) {
@@ -1560,17 +1600,28 @@ hr {
 }
 .sign-item .btn_viewmore::before {
   display: inline-block;
-  width: 800px;
-  height: 800px;
+  width: 400px;
+  height: 400px;
   background: url(../img/Sign01.png) no-repeat;
   content: "";
   position: absolute;
-  right: -460px;
+  right: 0px;
+  bottom: -200px;
+  background-size: cover;
+}
+@media (max-width: 1440px) {
+  .sign-item .btn_viewmore::before {
+    width: 350px;
+    height: 350px;
+    right: 0px;
+    bottom: -200px;
+    background-size: cover;
+  }
 }
 @media (max-width: 428px) {
   .sign-item .btn_viewmore::before {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     right: 0px;
     bottom: -80px;
     background-size: cover;
@@ -1621,12 +1672,14 @@ hr {
   .Shop-Cart::before {
     width: 300px;
     height: 300px;
-    bottom: 700px;
+    bottom: 650px;
   }
 }
 @media (max-width: 428px) {
   .Shop-Cart::before {
-    display: none;
+    width: 150px;
+    height: 150px;
+    bottom: 800px;
   }
 }
 .Shop-Cart .checkout-nav {
@@ -1638,12 +1691,12 @@ hr {
 }
 @media (max-width: 1400px) {
   .Shop-Cart .checkout-nav {
-    margin-left: 339px;
+    display: none;
   }
 }
 @media (max-width: 428px) {
   .Shop-Cart .checkout-nav {
-    margin-left: 0px;
+    display: none;
   }
 }
 .Shop-Cart .checkout-nav .step-active {
@@ -1698,6 +1751,11 @@ hr {
   margin: auto;
   position: relative;
 }
+@media (max-width: 768px) {
+  .Shop-Cart .Shop-Cart-text {
+    display: none;
+  }
+}
 .Shop-Cart .Shop-Cart-text::before {
   content: "";
   position: absolute;
@@ -1719,6 +1777,12 @@ hr {
   padding: 20px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .Product-Information {
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .Product-Information::before {
   content: "×";
   position: absolute;
@@ -1728,25 +1792,76 @@ hr {
   color: #000000;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .Product-Information::before {
+    right: 0;
+    width: 25px;
+  }
+}
 .Product-Information .Product {
   display: flex;
   width: 30%;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .Product-Information .Product {
+    width: 50%;
+    flex-wrap: wrap;
+  }
+  .Product-Information .Product img {
+    margin-left: 35px;
+  }
+  .Product-Information .Product p {
+    margin-left: 5px;
+  }
 }
 .Product-Information .Discount {
   align-items: center;
   display: flex;
   margin: 0 10px;
 }
+@media (max-width: 768px) {
+  .Product-Information .Discount {
+    display: block;
+    text-align: right;
+    margin: 0;
+    position: relative;
+  }
+  .Product-Information .Discount::before {
+    content: "尚無優惠";
+    position: absolute;
+    bottom: -43px;
+    left: 341px;
+    color: #555;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+  .Product-Information .Discount p {
+    display: none;
+  }
+}
 .Product-Information .Price {
   align-items: center;
   display: flex;
   margin: 0 206px;
 }
+@media (max-width: 768px) {
+  .Product-Information .Price {
+    display: block;
+    text-align: right;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
 .Product-Information .quantity-selector {
   display: flex;
   align-items: center;
   margin-left: -35px;
+}
+@media (max-width: 768px) {
+  .Product-Information .quantity-selector {
+    margin-left: 0;
+  }
 }
 .Product-Information .quantity-btn {
   padding: 0 5px;
@@ -1755,15 +1870,37 @@ hr {
   border: 1px solid #ccc;
   background-color: #f9f9f9;
 }
+@media (max-width: 768px) {
+  .Product-Information .quantity-btn {
+    padding: 6px 10px;
+  }
+}
 .Product-Information .quantity-input {
   width: 60px;
   text-align: center;
   margin: 0 5px;
 }
+@media (max-width: 768px) {
+  .Product-Information .quantity-input {
+    width: 80px;
+    height: 30px;
+  }
+}
 .Product-Information .Total {
   display: flex;
   align-items: center;
   margin: auto;
+  margin-left: 100px;
+}
+@media (max-width: 768px) {
+  .Product-Information .Total {
+    display: block;
+    text-align: right;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 178px;
+  }
 }
 
 .Discount-text {
@@ -1773,6 +1910,11 @@ hr {
   position: relative;
   margin-top: 30px;
 }
+@media (max-width: 768px) {
+  .Discount-text {
+    width: 100%;
+  }
+}
 .Discount-text::before {
   content: "";
   position: absolute;
@@ -1780,6 +1922,11 @@ hr {
   height: 1px;
   width: 1200px;
   background-color: #000000;
+}
+@media (max-width: 768px) {
+  .Discount-text::before {
+    width: 40%;
+  }
 }
 
 .Discount-Block {
@@ -1791,15 +1938,43 @@ hr {
   padding: 20px 20px 150px 20px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .Discount-Block {
+    width: 100%;
+    display: block;
+    padding: 20px 20px 50px 20px;
+  }
+}
 .Discount-Block .Discount-txt {
   line-height: 50px;
   font-size: 24px;
+}
+@media (max-width: 768px) {
+  .Discount-Block .Discount-txt {
+    font-size: 16px;
+  }
+}
+.Discount-Block .Discount-txt p {
+  display: flex;
+  margin: 15px 0;
+}
+@media (max-width: 768px) {
+  .Discount-Block .Discount-txt p {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .Discount-Block .Discount-txt span {
   color: #fff;
   background-color: #3D8B58;
   padding: 2px 5px;
   margin: 0 20px;
+}
+@media (max-width: 768px) {
+  .Discount-Block .Discount-txt span {
+    margin: 0;
+    padding: 0 10px;
+  }
 }
 .Discount-Block .store-btn {
   position: absolute;
@@ -1822,6 +1997,11 @@ hr {
 .Add-on-Items {
   margin: 200px 0;
 }
+@media (max-width: 768px) {
+  .Add-on-Items {
+    margin: 0;
+  }
+}
 .Add-on-Items .add-text {
   display: flex;
   width: 1200px;
@@ -1829,6 +2009,11 @@ hr {
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .Add-on-Items .add-text {
+    width: 428px;
+  }
 }
 .Add-on-Items .add-text::before {
   content: "";
@@ -1843,6 +2028,11 @@ hr {
   justify-content: center;
   width: 1200px;
   margin: auto;
+}
+@media (max-width: 768px) {
+  .Add-on-Items .ProductDetails {
+    display: none;
+  }
 }
 .Add-on-Items .card {
   width: 31.3333%;
@@ -1878,12 +2068,29 @@ hr {
   margin: auto;
   width: 1200px;
 }
+@media (max-width: 768px) {
+  .Step2 {
+    flex-direction: column;
+    width: 768px;
+    padding: 15px;
+  }
+}
+@media (max-width: 428px) {
+  .Step2 {
+    width: 428px;
+  }
+}
 .Step2 .step2-title {
   font-size: 36px;
   position: relative;
   margin-top: 30px;
   margin-bottom: 50px;
   text-align: center;
+}
+@media (max-width: 768px) {
+  .Step2 .step2-title {
+    font-size: 28px;
+  }
 }
 .Step2 .step2-title::before {
   content: "";
@@ -1896,6 +2103,11 @@ hr {
 }
 .Step2 form {
   width: 50%;
+}
+@media (max-width: 768px) {
+  .Step2 form {
+    width: 100%;
+  }
 }
 .Step2 form .step2-item {
   display: flex;
@@ -1927,6 +2139,13 @@ hr {
   margin-bottom: 500px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .Checkout {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px;
+  }
+}
 .Checkout::before {
   display: inline-block;
   width: 400px;
@@ -1943,6 +2162,14 @@ hr {
     right: 900px;
   }
 }
+@media (max-width: 428px) {
+  .Checkout::before {
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
+    right: 270px;
+  }
+}
 .Checkout .Check {
   text-align: center;
   font-size: 36px;
@@ -1954,12 +2181,22 @@ hr {
   margin-bottom: 20px;
   width: 395px;
 }
+@media (max-width: 768px) {
+  .Checkout .check-amount, .Checkout .check-total {
+    width: 225px;
+  }
+}
 .Checkout .Shipping-Fee {
   display: flex;
   justify-content: space-between;
   margin-top: 150px;
   margin-bottom: 20px;
   width: 395px;
+}
+@media (max-width: 768px) {
+  .Checkout .Shipping-Fee {
+    width: 225px;
+  }
 }
 .Checkout span {
   color: #4969A7;
@@ -1978,4 +2215,37 @@ hr {
 }
 .Checkout .btn_viewmore {
   margin: 60px 0;
+}
+.Checkout a {
+  display: none;
+}
+@media (max-width: 768px) {
+  .Checkout a {
+    display: block;
+    margin: 50px 150px;
+    text-align: center;
+  }
+}
+@media (max-width: 428px) {
+  .Checkout a {
+    margin: 50px 0;
+  }
+}
+
+.step123 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .step123 {
+    display: block;
+    text-align: center;
+  }
+  .step123 h3 {
+    font-size: 20px;
+    margin-top: 100px;
+  }
+  .step123 p {
+    font-size: 16px;
+    color: #8B9FBE;
+  }
 }/*# sourceMappingURL=page.css.map */
