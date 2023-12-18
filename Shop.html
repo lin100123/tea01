@@ -104,8 +104,8 @@
                     <button class="quantity-btn" onclick="increaseQuantity()">+</button>
                     </div>
                     <div class="Total">
-                <p>NT$100</p>
-                </div>
+                    <p>NT$100</p>
+                    </div>
               </div>
               <div class="Discount-text">
                 <p>尚有其它優惠可使用 : </p>
@@ -118,8 +118,8 @@
                     <p><span>購物金回饋</span>再滿 NT$100 即得100元購物金</p>
                 </div>
                 <div class="store-btn">
-                    <a class="btn1" href="#">繼續購物</a>
-                    <a class="btn2" href="#">></a>
+                    <a class="btn1" href="GotoPurchase.html">繼續購物</a>
+                    <a class="btn2" href="GotoPurchase.html">></a>
                 </div>
               </div>
         </section>
@@ -259,18 +259,19 @@
     
         </footer>
 
-        <script>
-            $(window).scroll(function () {
-                var st = $(window).scrollTop()
-                if (st >= '100') {
-                    $('header').addClass('act')
-                    $('.logo img').attr("src", "./img/logo2.png")
-                } else {
-                    $('header').removeClass('act')
-                    $('.logo img').attr("src", "./img/logo.png")
-                }
-            })
-        </script>
+    <script>
+        $(window).scroll(function () {
+            var st = $(window).scrollTop()
+            if (st >= '100') {
+                $('header').addClass('act')
+                $('.logo img').attr("src", "./img/logo2.png")
+            } else {
+                $('header').removeClass('act')
+                $('.logo img').attr("src", "./img/logo.png")
+            }
+        })
+     </script>
+     <!-- 商品數量按鈕 -->
     <script>
         function increaseQuantity() {
           var quantityInput = document.getElementById('quantity');
@@ -285,8 +286,56 @@
             quantityInput.value = currentValue - 1;
           }
         }
-      </script>
-      
+    </script>
+      <!-- Total -->
+    <script>
+        $(document).ready(function(){
+            
+            updateTotal();
+        
+            
+            $(".quantity-btn:first").click(function(){
+                decreaseQuantity();
+            });
+        
+            
+            $(".quantity-btn:last").click(function(){
+                increaseQuantity();
+            });
+        
+            
+            $("#quantity").change(function(){
+                updateTotal();
+            });
+        });
+        
+        function decreaseQuantity() {
+            var quantityInput = $("#quantity");
+            var currentQuantity = parseInt(quantityInput.val());
+        
+            if (currentQuantity > 1) {
+                quantityInput.val(currentQuantity - 1);
+                updateTotal();
+            }
+        }
+        
+        function increaseQuantity() {
+            var quantityInput = $("#quantity");
+            var currentQuantity = parseInt(quantityInput.val());
+        
+            quantityInput.val(currentQuantity + 1);
+            updateTotal();
+        }
+        
+        function updateTotal() {
+            var price = parseInt($(".Price p").text().replace("NT$", ""));
+            var quantity = parseInt($("#quantity").val());
+            var total = price * quantity;
+        
+            $(".Total p").text("NT$" + total);
+        }
+    </script>
+
     <button id="topBtn" title="TOP">TOP</button>
     <script src="script.js"></script>
 </body>
