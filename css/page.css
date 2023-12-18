@@ -361,6 +361,7 @@
 @media (max-width: 768px) {
   .Shop {
     font-size: 16px;
+    padding: 10px 30px;
   }
 }
 
@@ -376,6 +377,7 @@
 @media (max-width: 768px) {
   .View {
     font-size: 16px;
+    padding: 10px 30px;
   }
 }
 
@@ -393,8 +395,8 @@
 }
 @media (max-width: 992px) {
   #topBtn {
-    font-size: 10px;
-    padding: 9px 5px;
+    font-size: 16px;
+    padding: 11px 5px;
   }
 }
 
@@ -1111,7 +1113,7 @@ hr {
 }
 
 .phone-btn {
-  padding: 10px 50px;
+  padding: 13px 50px;
   margin: 20px 31% 50px;
   background-color: #3D8B58;
 }
@@ -1167,6 +1169,7 @@ hr {
     width: 100%;
     padding: 0 15px;
     flex-wrap: wrap;
+    margin: 20px 0;
   }
   .News .News-Card .News-text {
     margin: auto;
@@ -1180,7 +1183,7 @@ hr {
     font-size: 18px;
   }
   .News .Next-btn {
-    margin: 20px 0;
+    margin: 50px 0;
   }
   .News .Next-btn::before {
     display: none;
@@ -1277,7 +1280,7 @@ hr {
     width: 150px;
     height: 150px;
     background-size: cover;
-    bottom: -600px;
+    bottom: -900px;
   }
 }
 
