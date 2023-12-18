@@ -345,17 +345,17 @@
   justify-content: center;
   margin: 400px 0 50px;
 }
-.Next-btn .pagination-item {
+.Next-btn a {
+  text-decoration: none;
+  color: #000;
+}
+.Next-btn a .pagination-item {
   margin: 0 5px;
   border: 1px solid #888;
   background-color: #fff;
   width: 30px;
   height: 30px;
   text-align: center;
-}
-.Next-btn .pagination-item a {
-  text-decoration: none;
-  color: #000;
 }
 @media (max-width: 768px) {
   .Next-btn {
@@ -1339,6 +1339,14 @@ hr {
   padding-right: 200px;
   padding-bottom: -700px;
   font-size: 24px;
+}
+@media (max-width: 1400px) {
+  .About .about-text {
+    flex: none;
+    line-height: 30px;
+    padding-right: 13px;
+    padding-bottom: 0;
+  }
 }
 .About .about-text::before {
   display: inline-block;
