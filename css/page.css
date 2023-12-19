@@ -209,7 +209,7 @@
   right: -450px;
   bottom: -280px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .tea-card::before {
     width: 400px;
     height: 400px;
@@ -223,7 +223,7 @@
   right: 1050px;
   bottom: -430px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .tea-card:nth-child(3)::before {
     width: 300px;
     height: 500px;
@@ -411,7 +411,7 @@
   cursor: pointer;
   font-size: 20px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   #topBtn {
     bottom: 30px;
     right: 30px;
@@ -682,7 +682,7 @@
   left: -630px;
   bottom: -700px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .contact_item::before {
     left: -370px;
   }
@@ -701,12 +701,18 @@
   border-radius: 10px;
   font-size: 16px;
   padding: 8px 16px;
-  width: 308px;
+  width: 460px;
   border: 1px solid #888;
   margin-bottom: 30px;
   color: #A0A0A0;
   box-shadow: none;
   position: relative;
+}
+@media (max-width: 428px) {
+  .contact_item select {
+    width: 100%;
+    padding: 8px 30px 8px 10px;
+  }
 }
 .contact_item textarea {
   border-radius: 10px;
@@ -800,7 +806,7 @@
     height: 10%;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-freshing::before {
     width: 300px;
     height: 300px;
@@ -841,7 +847,7 @@
   justify-content: end;
   margin: 100px 0;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-freshing .flavor-card {
     width: 1050px;
   }
@@ -890,7 +896,7 @@
   width: 1550px;
   justify-content: end;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-freshing .flavor-card2 {
     width: 1300px;
   }
@@ -943,7 +949,7 @@
   left: 0px;
   bottom: -500px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-floral-fruit::before {
     width: 300px;
     height: 450px;
@@ -965,7 +971,7 @@
   justify-content: end;
   margin: 100px 0;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-floral-fruit .flavor-card {
     width: 1050px;
   }
@@ -1024,7 +1030,7 @@
   margin: 0;
   background-color: #fe6666;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-floral-fruit .flavor-card2 {
     width: 1300px;
   }
@@ -1049,7 +1055,7 @@
   right: -200px;
   bottom: -300px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-roasted::before {
     width: 250px;
     height: 400px;
@@ -1072,7 +1078,7 @@
   justify-content: end;
   margin: 100px 0;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-roasted .flavor-card {
     width: 1050px;
   }
@@ -1131,7 +1137,7 @@
   margin: 0;
   background-color: #846060;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .flavor-roasted .flavor-card2 {
     width: 1300px;
   }
@@ -1287,7 +1293,7 @@ hr {
   top: 1800px;
   background-size: cover;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .News .Next-btn::before {
     width: 400px;
     height: 400px;
@@ -1340,7 +1346,7 @@ hr {
   padding-bottom: -700px;
   font-size: 24px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .About .about-text {
     flex: none;
     line-height: 30px;
@@ -1358,7 +1364,7 @@ hr {
   right: 0;
   bottom: -930px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .About .about-text::before {
     bottom: -1530px;
   }
@@ -1474,7 +1480,7 @@ hr {
   top: -230px;
   background-size: cover;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .login-item::before {
     width: 300px;
     height: 300px;
@@ -1548,7 +1554,7 @@ hr {
   right: 700px;
   background-size: cover;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .login-item .SignUp-btn .SignUp-link::before {
     width: 350px;
     height: 350px;
@@ -1676,7 +1682,7 @@ hr {
   bottom: 600px;
   background-size: cover;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .Shop-Cart::before {
     width: 300px;
     height: 300px;
@@ -1697,7 +1703,7 @@ hr {
   margin-top: 100px;
   width: 815px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .Shop-Cart .checkout-nav {
     display: none;
   }
@@ -2165,7 +2171,7 @@ hr {
   bottom: -450px;
   background-size: cover;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .Checkout::before {
     right: 900px;
   }

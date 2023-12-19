@@ -149,7 +149,7 @@ body {
 }
 
 .container {
-  width: 1400px;
+  width: 1440px;
   margin: auto;
 }
 
@@ -275,6 +275,7 @@ header .header .m_menu {
     width: 30px;
     height: 30px;
     margin-right: 10px;
+    margin-left: 10px;
   }
   header .header .m_menu .hamburger span {
     top: 50%;
@@ -586,7 +587,7 @@ header.act .header .right_side .right_btn:first-child {
   right: -240px;
   bottom: -100px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .blockbody .activity::before {
     width: 200px;
     height: 200px;
@@ -634,7 +635,7 @@ header.act .header .right_side .right_btn:first-child {
   right: 430px;
   bottom: -30px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .blockbody .quality .quality_title::before {
     background-size: cover;
     width: 180px;
@@ -762,7 +763,7 @@ header.act .header .right_side .right_btn:first-child {
   right: -130px;
   bottom: 350px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .blockbody .promotion::before {
     width: 280px;
     height: 320px;
@@ -900,7 +901,7 @@ header.act .header .right_side .right_btn:first-child {
   left: 0;
   bottom: -80px;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .blockbody .gift-box::before {
     width: 310px;
     height: 310px;
