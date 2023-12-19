@@ -485,7 +485,8 @@ header.act .header .right_side .right_btn:first-child {
 .blockbody .image-container .hot-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blockbody .image-container .hot-img span {
   position: absolute;
